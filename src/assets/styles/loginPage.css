@@ -1,0 +1,92 @@
+.loginContainer{
+    width:100vw;
+    max-width:100%;
+    height:100vh;
+    background-image: linear-gradient(to bottom,#39ebdc,#2f99f0);
+}
+.loginFields{
+    width: 100%;
+    height: 30px;
+    background: rgba(255,255,255,0.3);
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 2vmax;
+    margin: 1vmax 0 1vmax 0;
+    color: white;
+    text-align: center;
+}
+.loginSubmit{
+    width: 100%;
+            height: 60px;
+            background: rgba(255,255,255,0.9);
+            padding: 10px 12px;
+            border: none;
+            border-radius: 30px;
+            font-size: 2vmax;
+            margin: 2vmax 0 1vmax 0;
+            color: #5185FF;
+}
+.loginForm{
+    display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 30%;
+}
+.loginIconBtns{
+    display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 30%,
+}
+.MuiIconButton-root{
+    padding: 0 !important;
+}
+@media screen and (max-width:600px) {
+.loginForm{
+    width:80% ;
+    margin-top: 2vmax;
+}
+.loginIconBtns{
+    width:80% ;
+}
+.loginFields{
+    font-size: 3vmax;
+}
+.loginFields:nth-child(2){
+    margin-top: 2vmax;
+}
+.loginSubmit{
+    width:100%;
+    margin-top: 5vmax;
+    font-size: 3.5vmax;
+}
+.loginIconBtns{
+    margin-top: 2vmax;
+}
+
+}
+@media screen and (min-width:600px) and  (max-width:1020px){
+    .loginForm{
+        width:50% ;
+        margin-top: 2vmax;
+    }
+    .loginIconBtns{
+        width:50% ;
+    }
+    .loginFields{
+        font-size: 3vmax;
+    }
+    .loginFields:nth-child(2){
+        margin-top: 3vmax;
+    }
+    .loginSubmit{
+        width:100%;
+        margin-top: 4vmax;
+        font-size: 3.5vmax;
+    }
+    .loginIconBtns{
+        margin-top: 2vmax;
+    }
+} 
