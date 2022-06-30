@@ -6,15 +6,11 @@ import LogoText from "../../assets/images/LogoText.png";
 const LoginLogo = () => {
   return (
     <Box
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            paddingTop: "2vmax",
-          }}
+          className="logoContainer"
         >
-          <img src={Logo} width="150px" height="auto" />
+          <img src={Logo} width="150px" height="auto" style={{paddingTop:"1vmax"}} />
 
-          <img src={LogoText} style={{ paddingTop: "1vmax" }} />
+          <img src={LogoText} className="LogoText" />
         </Box>
   )
 }

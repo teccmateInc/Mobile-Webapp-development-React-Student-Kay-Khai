@@ -18,6 +18,7 @@ const LoginForm = () => {
         <input
           type="submit"
           className="loginSubmit"
+          value="SIGN UP"
         />
       </form>
     </Box>

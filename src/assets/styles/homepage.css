@@ -1,0 +1,158 @@
+
+.btnContainer{
+    display:flex;
+    justify-content:center;
+}
+.luckydrawBtn{
+    background-color:rgba(255,255,255,1) !important;
+    color:black !important;
+    margin-right:4vmax !important;
+    width:270px;
+    height:55px;
+    border-radius:100px !important;
+}
+.eventCard{
+    width:50%;
+    background:linear-gradient(to right,#11aa9b,#4FD2C2) !important;
+    padding:3vmax;
+    /* border-radius:10px !important; */
+}
+.location{
+    font-size:2vmax !important;
+    width:67%;
+}
+.sponsor{
+    font-size:2vmax !important;
+}
+.activitesHeading{
+
+    font-size: 2vmax !important;
+    margin: 2vmax 0vmax 2vmax 2vmax !important;
+
+}
+.sponserHeading{
+    font-size: 2vmax !important;
+    margin: 2vmax 0vmax 2vmax 4vmax !important;
+}
+
+.activitiesCard{
+    display: flex;
+                  color: white !important;
+                  flex-direction: column;
+                  align-items: center;
+                  background:linear-gradient(to top,#5659C4, #6164CF) !important;
+                  padding: 2vmax;
+                  margin:0 2vmax;
+                  border-radius: 10px !important;
+                  height: 300px;
+                  position: relative;
+}
+
+.sliderImage{
+    width:106px !important;
+}
+.sponsoredBy{
+     font-size: 1.5vmax !important;
+     font-weight: 100 !important; 
+}
+.activityType{
+    font-size: 2.6vmax;
+                text-align: center;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                margin:1vmax 0 !important; 
+}
+.sponserBox{
+    position:absolute;
+    bottom:17px;
+    text-align:center;
+}
+.sponserName{
+    font-size: 3.4vmax !important;
+    text-align: center;
+    line-height: 1 !important;
+    color: orange; 
+}
+.sponserImage{
+    width: 150px;
+}
+.sponserSlider div div {
+    display:flex !important;
+    justify-content:center !important;
+    align-items: center;
+}
+.sponsorsContainer{
+    margin-top: 3vmax;
+            width:100vw;
+            max-width:100%;
+            margin:0;
+            padding:2vmax 0;
+            background:#D5D5D5;
+}
+@media screen and (max-width:600px) {
+    .font{
+        font-size: 3vmax !important;
+    }
+    .btnContainer{
+    width: 100%;
+    margin-bottom: 2vmax !important;
+}
+.luckydrawBtn{
+    height:45px;
+    margin-right:0px !important;
+    margin-left: 2vmax !important;
+}
+.eventCard{
+    width:80%;
+    margin:2vmax 0 !important ;
+}
+.location{
+    font-size:2vmax;
+    width: 70%;
+}
+.sponsor{
+    font-size:2vmax !important;
+}
+.activitiesCard{
+    height: 165px;
+    margin:0 0.5vmax;
+    padding: 1vmax;
+
+}
+.sliderImage{
+    padding:1vmax 0;
+    width:52px !important;
+}
+
+.sponsoredBy{
+    margin: 0.5vmax 0;
+     font-size: 1.7vmax !important; 
+}
+.activityType{
+    font-size: 3vmax !important;
+                text-align: center;
+                margin:1vmax 0 !important; 
+                padding:0 1vmax ;
+                height: auto;
+                display: flex;
+                align-items: flex-start;
+}
+.sponserBox{
+bottom:10px
+}
+.sponserName{
+    line-height: 1 !important;
+}
+.sponserImage{
+    width: 80px;
+}
+.activitesHeading{
+    font-size: 3vmax !important;
+    font-weight: 600 !important;
+}
+.sponserHeading{
+    font-size: 3vmax !important;
+    font-weight: 600 !important;
+}
+}

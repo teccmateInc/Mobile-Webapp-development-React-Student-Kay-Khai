@@ -12,13 +12,13 @@ const LoginIconBtns = () => {
     className="loginIconBtns"
         >
           <IconButton >
-            <img src={Gmail} style={{ width: "80px", height: "auto" }} />
+            <img src={Gmail} className="loginIcons" />
           </IconButton>
           <IconButton >
-            <img src={Google} style={{ width: "80px", height: "auto" }} />
+            <img src={Google} className="loginIcons" />
           </IconButton>
           <IconButton >
-            <img src={FaceBook} style={{ width: "80px", height: "auto" }} />
+            <img src={FaceBook} className="loginIcons" />
           </IconButton>
         </Box>
   )
