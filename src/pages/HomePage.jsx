@@ -1,42 +1,55 @@
-import { Box, Button, Card, Grid, Paper, Typography } from "@mui/material";
-import React from "react";
+import {
+  Box,
+  Button,
+  Card,
+  Grid,
+  IconButton,
+  Paper,
+  Typography,
+} from "@mui/material";
+import React, { useState } from "react";
 import AppBar from "../components/layout/AppBar";
 import { Apps } from "@mui/icons-material";
 import "../assets/styles/homepage.css";
 import EventCard from "../components/HomePage/EventCard";
-import puma from "../assets/images/puma.png";
-import AllState from "../assets/images/AllState.png";
-import Bajaj from "../assets/images/Bajaj.png";
-import Slider from "react-slick";
 import ActivitiesSlider from "../components/HomePage/ActivitiesSlider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SponsorsSlider from "../components/HomePage/SponsorsSlider";
-
-var settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  centerMode:true,
-  slidesToScroll: 1,
-};
+import { Add } from "@mui/icons-material";
+import JoinAs from "../components/HomePage/JoinAs";
+import Sidebar from "../components/layout/Header";
 
 const HomePage = () => {
+  const [drawerOpen, setDrawerOpen] = useState({ left: false });
+  const [modal, setModal] = useState();
   return (
     <Box>
       <AppBar>
         <Box style={{ display: "flex", alignItems: "center", flex: 1 }}>
-          <Apps sx={{ mx: "3vmax", color: "white" }} fontSize="medium" />
+          <Apps
+            className="col-white"
+            sx={{ mx: "3vmax" }}
+            fontSize="medium"
+            onClick={() => setDrawerOpen({ left: !drawerOpen.left })}
+          />
           <Box style={{ display: "flex", flexDirection: "column" }}>
             <Typography
               variant="h5"
-              sx={{ fontFamily: "Montserrat", color: "white" }}
+              className="col-white"
+              sx={{ fontFamily: "Montserrat" }}
             >
               Welcome Guest
             </Typography>
-            <Typography sx={{ fontFamily: "Montserrat", color: "white" }}>
-              Attendee Login/SignUp
+            <Typography className="col-white" sx={{ fontFamily: "Montserrat" }}>
+              Attendee{" "}
+              <span
+                style={{ cursor: "pointer" }}
+                
+              >
+                {" "}
+                Login/SignUp{" "}
+              </span>
             </Typography>
           </Box>
         </Box>
@@ -46,44 +59,44 @@ const HomePage = () => {
           </Button>
         </Box>
       </AppBar>
-      <Box
-        style={{ display: "flex", justifyContent: "center", margin: "2vmax 0" }}
-      >
-        <EventCard />
-      </Box>
-      <Box style={{ margin: "4vmax 2vmax",overflow:"hidden" }}>
-        <Typography
-          variant="h3"
-          className="activitesHeading" style={{marginLeft:"2vmax"}}>
-          Attractive Activities
-        </Typography>
-        <Box>
-            <ActivitiesSlider />
-        </Box>
-      </Box>
-      <Box style={{ margin: "4vmax 0vmax" }}>
-        <Typography
-          variant="h3"
-          className="sponserHeading"
-        >
-          Title Sponsers
-        </Typography>
-        <div
+      <Box>
+        <Box
           style={{
-            marginTop: "3vmax",
-            width:"100vw",
-            maxWidth:"100%",
-            margin:0,
-            padding:"2vmax 0",
-            background:"#D5D5D5"
+            display: "flex",
+            justifyContent: "center",
+            margin: "2vmax 0",
           }}
         >
-            <Box style={{marginLeft:"2vmax"}}>
-            <SponsorsSlider />
+          <EventCard setModal={setModal}/>
+        </Box>
+        <Box style={{ margin: "4vmax 2vmax", overflow: "hidden" }}>
+          <Typography
+            variant="h3"
+            className="activitesHeading"
+            style={{ marginLeft: "2vmax" }}
+          >
+            Attractive Activities
+          </Typography>
+          <Box>
+            <ActivitiesSlider />
+          </Box>
+        </Box>
+        <Box style={{ margin: "4vmax 0vmax", position: "relative" }}>
+          <Typography variant="h3" className="sponserHeading">
+            Title Sponsers
+          </Typography>
+          <div className="sponsorsContainer">
+            <Box style={{ marginLeft: "2vmax" }}>
+              <SponsorsSlider />
             </Box>
-          
-        </div>
+          </div>
+          <IconButton className="addBtnContainer">
+            <Add fontSize="large" className="addBtn" />
+          </IconButton>
+        </Box>
+        <JoinAs modal={modal} setModal={setModal} />
       </Box>
+      <Sidebar drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen} />
     </Box>
   );
 };

@@ -3,9 +3,9 @@ import { Box } from '@mui/system'
 import React from 'react'
 import "../../assets/styles/homepage.css"
 
-const EventCard = () => {
+const EventCard = ({setModal}) => {
   return (
-    <Paper className="eventCard">
+    <Paper className="eventCard" onClick={() => setModal(true)}>
             <Box style={{display:"flex",justifyContent:"space-between"}}>
                 <Box style={{color:"white"}}>
                     <Typography variant='h5' className='font'>Tect Edu Fair</Typography>

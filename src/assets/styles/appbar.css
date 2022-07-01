@@ -5,7 +5,7 @@
     display:flex;
     align-items:center;
     /* justify-content: space-between; */
-    background:linear-gradient(to right,#2f99f0,#39ebdc)
+    background:linear-gradient(to right,#5185FF,#4FD2C2)
 }
 .appBar{
     width:100vw;
@@ -14,8 +14,20 @@
     display:flex;
     align-items:center;
     /* justify-content: space-between; */
-    background:linear-gradient(to right,#2f99f0,#39ebdc)
+    background:linear-gradient(to right,#5185FF,#4FD2C2)
 }
+.MuiDrawer-root,.MuiDrawer-root div{
+    top:0 !important;
+    }
+    .MuiDrawer-paper{
+    width:23vw;
+
+    }
+    .listItem{
+        display:flex;
+        padding:0.7vmax 1vmax;
+        align-items:center;
+    }
 @media screen and (max-width:600px) {
     
     .AppBar{
@@ -34,5 +46,23 @@
         .appBar:nth-child(2){
             align-items: center;
         }
+        .MuiDrawer-root,.MuiDrawer-root div{
+            top:28% !important;
+            width:100vw
+            }
+    .listItem{
+        padding:0vmax 1vmax;
+        padding-left: 3vmax;
         
+    }
+}
+@media screen and (min-width:600px) and (max-width:970px){
+    .MuiDrawer-paper{
+        width:35vw;
+    }
+    .listItem{
+        padding:1vmax 1vmax;
+        padding-left: 3vmax;
+        
+    }
 }

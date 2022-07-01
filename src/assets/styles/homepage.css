@@ -4,7 +4,7 @@
     justify-content:center;
 }
 .luckydrawBtn{
-    background-color:rgba(255,255,255,1) !important;
+    background-color:#FFFFFF !important;
     color:black !important;
     margin-right:4vmax !important;
     width:270px;
@@ -88,8 +88,36 @@
             max-width:100%;
             margin:0;
             padding:2vmax 0;
-            background:#D5D5D5;
+            background:#D9D9D9;
 }
+.addBtnContainer{
+    position:absolute !important;
+    right:10px;
+    bottom:-20px;
+    background:linear-gradient(to top,#5185FF,#39ebdc);
+}
+.addBtn{
+    padding:1vmax;
+    color:white;
+}
+.joinAsModal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    opacity:0.9;
+      border: none;
+      border-radius:15px;
+    /* boxShadow: 24; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media screen and (max-width:600px) {
     .font{
         font-size: 3vmax !important;
@@ -155,4 +183,8 @@ bottom:10px
     font-size: 3vmax !important;
     font-weight: 600 !important;
 }
+.joinAsModal{
+    width:80vw
+}
+
 }
