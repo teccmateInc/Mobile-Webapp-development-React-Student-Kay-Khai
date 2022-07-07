@@ -17,7 +17,7 @@
 }
 .destinationBox{
     position: absolute;
-                  bottom: 0;
+                  bottom: -92px;
                   width: 95vw;
                   border-radius: 20px 20px 0 0;
                   padding: 1vmax;
@@ -27,5 +27,9 @@
 @media screen and (max-width:600px) {
     .eventImg{
         width:140px !important;
+    }
+    .destinationBox{
+        bottom: -122px;
+    
     }
 }

@@ -8,9 +8,10 @@ import "../assets/styles/direction.css"
 
 const mapStyles = {
   width: "100%",
-  overflow:"hidden"
+  overflowY:"hidden",
   // height: "100%",
-  // height:"82vh",
+  positiom:"relative",
+  height:"82vh !important",
   // maxHeight:"100%"
 };
 export class Direction extends Component {
@@ -35,12 +36,12 @@ export class Direction extends Component {
             </Button>
           </Box>
         </AppBar>
-        <Box style={{ width: "100vw", maxWidth: "100%", height: "82%" }}>
+        <Box style={{ width: "100vw", maxWidth: "100%", height: "82vh !important"}}>
           <Map
             google={this.props.google}
-            zoom={19}
+            zoom={17}
             style={mapStyles}
-            initialCenter={{ lat: 40.758592, lng:-73.985017 }}
+            initialCenter={{ lat: 40.758596, lng:-73.9872057 }}
           >
             <Marker position={{ lat: 40.758592, lng: -73.985017 }} />
           </Map>
@@ -50,7 +51,7 @@ export class Direction extends Component {
                 sx={{
                   padding: "2vmax",
                   position: "absolute",
-                  bottom: {xs:110,md:150},
+                  bottom: {xs:10,sm:50,md:50},
                   width: {xs:"93%",md:"50%"},
                   borderRadius: "30px 30px 0 0",
                 }}
