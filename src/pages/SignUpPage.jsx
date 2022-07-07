@@ -15,15 +15,16 @@ import "../assets/styles/signup.css";
 import { Apps } from "@mui/icons-material";
 import SignupForm from "../components/SignUp/SignupForm";
 import AppBar from "../components/layout/AppBar";
+import MenuBar from "../components/layout/MenuBar";
 
 const SignUp = () => {
   return (
     <>
     <AppBar signupApp="true">
-        <Box style={{display:"flex"}}>
-      <Apps sx={{mx:"3vmax",color:"white"}} fontSize="medium"/>
+      <MenuBar>
       <Typography variant="h5" sx={{fontFamily:"Montserrat",color:"white"}} >SIGN-UP DETAILS</Typography>
-        </Box>
+
+      </MenuBar>
     </AppBar>
     <Box className="mainContainer"
     >

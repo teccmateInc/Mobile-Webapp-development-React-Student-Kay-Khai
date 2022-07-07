@@ -3,6 +3,7 @@ import React from "react";
 import "../../assets/styles/appbar.css"
 import {BookOutlined,ShieldOutlined,StarBorderOutlined,CardGiftcardOutlined,Camera,ContentCopyOutlined,LogoutOutlined,TabletMacOutlined} from "@mui/icons-material"
 import NFT from "../../assets/images/NFT.png"
+import { Link } from "react-router-dom";
 
 const Sidebar = ({ drawerOpen, setDrawerOpen }) => {
   const toggleDrawer = (anchor, open) => (event) => {
@@ -26,14 +27,16 @@ const Sidebar = ({ drawerOpen, setDrawerOpen }) => {
         <ListItem >
             <Box className="listItem">
                 <BookOutlined style={{paddingRight:"1vmax"}}/>
+                <Link to="/directory" style={{textDecoration:"none",color:"black"}}>
                 <Typography fontSize="14px" fontWeight="500">Directory</Typography>
+                </Link>
             </Box>
         </ListItem>
         <Divider  variant="fullWidth"/>
         <ListItem>
             <Box className="listItem">
                 <ShieldOutlined style={{paddingRight:"1vmax"}}/>
-                <Typography fontSize="13px" fontWeight="500">Villages</Typography>
+                <Link to="/villages" style={{textDecoration:"none",color:"black"}}><Typography fontSize="13px" fontWeight="500">Villages</Typography></Link>
             </Box>
         </ListItem>
         <Divider variant="fullWidth" />

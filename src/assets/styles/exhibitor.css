@@ -1,0 +1,62 @@
+.exhibitorImg{
+    width:350px;
+    height:350px;
+}
+.exhibitorName{
+    color:black;
+    position:absolute;
+    bottom:35px;
+    text-align: center;
+}
+.MuiFormControl-root .MuiOutlinedInput-root{
+    border-radius: 50px !important;
+    border:1px solid #5185FF !important;
+}
+.searchBoxContainer{
+    margin: 2vmax 4vmax;
+    display:flex;
+    justify-content:space-between;
+}
+.textFieldBox{
+    width:60%;
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+.exhibitorCard{
+    position:relative;
+    border:none !important;
+    box-shadow:none !important;
+    padding:0px !important;
+    cursor:pointer;
+    margin:0;
+}
+.exhibitorImgBox{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -9px;
+}
+.coursesContainer{
+    padding: 3vmax;
+    margin:1vmax 0;
+    box-shadow:none !important;
+}
+.materialBox{
+    margin: 2vmax 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width:600px) {
+    .exhibitorImg{
+        width: 176px;
+        height:185px
+    }
+    .exhibitorName{
+        bottom:24px;
+    font-size:1.5vmax !important;
+    font-weight: 600 !important;
+    padding-left:1.3vmax;
+    }
+}

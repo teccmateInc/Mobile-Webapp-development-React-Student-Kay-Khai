@@ -19,6 +19,7 @@ import SponsorsSlider from "../components/HomePage/SponsorsSlider";
 import { Add } from "@mui/icons-material";
 import JoinAs from "../components/HomePage/JoinAs";
 import Sidebar from "../components/layout/Header";
+import MenuBar from "../components/layout/MenuBar";
 
 const HomePage = () => {
   const [drawerOpen, setDrawerOpen] = useState({ left: false });
@@ -26,13 +27,7 @@ const HomePage = () => {
   return (
     <Box>
       <AppBar>
-        <Box style={{ display: "flex", alignItems: "center", flex: 1 }}>
-          <Apps
-            className="col-white"
-            sx={{ mx: "3vmax" }}
-            fontSize="medium"
-            onClick={() => setDrawerOpen({ left: !drawerOpen.left })}
-          />
+        <MenuBar>
           <Box style={{ display: "flex", flexDirection: "column" }}>
             <Typography
               variant="h5"
@@ -51,8 +46,8 @@ const HomePage = () => {
                 Login/SignUp{" "}
               </span>
             </Typography>
-          </Box>
         </Box>
+        </MenuBar>
         <Box className="btnContainer">
           <Button variant="contained" className="luckydrawBtn">
             LUCKY DRAW
