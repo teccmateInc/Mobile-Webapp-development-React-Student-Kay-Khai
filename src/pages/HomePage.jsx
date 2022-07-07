@@ -20,10 +20,12 @@ import { Add } from "@mui/icons-material";
 import JoinAs from "../components/HomePage/JoinAs";
 import Sidebar from "../components/layout/Header";
 import MenuBar from "../components/layout/MenuBar";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const [drawerOpen, setDrawerOpen] = useState({ left: false });
   const [modal, setModal] = useState();
+  const navigate = useNavigate();
   return (
     <Box>
       <AppBar>
@@ -38,7 +40,7 @@ const HomePage = () => {
             </Typography>
             <Typography className="col-white" sx={{ fontFamily: "Montserrat" }}>
               Attendee{" "}
-              <span
+              <span onClick={()=>navigate("/login")}
                 style={{ cursor: "pointer" }}
                 
               >
@@ -49,7 +51,7 @@ const HomePage = () => {
         </Box>
         </MenuBar>
         <Box className="btnContainer">
-          <Button variant="contained" className="luckydrawBtn">
+          <Button variant="contained" className="luckydrawBtn" onClick={()=>navigate("/login")}>
             LUCKY DRAW
           </Button>
         </Box>
@@ -62,7 +64,7 @@ const HomePage = () => {
             margin: "2vmax 0",
           }}
         >
-          <EventCard setModal={setModal}/>
+          <EventCard />
         </Box>
         <Box style={{ margin: "4vmax 2vmax", overflow: "hidden" }}>
           <Typography
@@ -86,7 +88,7 @@ const HomePage = () => {
             </Box>
           </div>
           <IconButton className="addBtnContainer">
-            <Add fontSize="large" className="addBtn" />
+            <Add fontSize="large" className="addBtn" onClick={()=>setModal(true)} />
           </IconButton>
         </Box>
         <JoinAs modal={modal} setModal={setModal} />

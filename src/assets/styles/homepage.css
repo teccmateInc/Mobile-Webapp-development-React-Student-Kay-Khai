@@ -56,7 +56,7 @@
      font-weight: 100 !important; 
 }
 .activityType{
-    font-size: 2.6vmax;
+    font-size: 2.6vmax !important;
                 text-align: center;
                 height: 100px;
                 display: flex;
@@ -91,9 +91,9 @@
             background:#D9D9D9;
 }
 .addBtnContainer{
-    position:absolute !important;
+    position:fixed !important;
     right:10px;
-    bottom:-20px;
+    bottom:10px;
     background:linear-gradient(to top,#5185FF,#39ebdc);
 }
 .addBtn{
@@ -158,9 +158,10 @@
      font-size: 1.7vmax !important; 
 }
 .activityType{
-    font-size: 3vmax !important;
+    font-size: 2.5vmax !important;
                 text-align: center;
-                margin:1vmax 0 !important; 
+                margin:1vmax 0 !important;
+                line-height: 1; 
                 padding:0 1vmax ;
                 height: auto;
                 display: flex;

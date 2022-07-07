@@ -1,11 +1,13 @@
 import { Paper, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import "../../assets/styles/homepage.css"
 
-const EventCard = ({setModal}) => {
+const EventCard = () => {
+    const navigate = useNavigate();
   return (
-    <Paper className="eventCard" onClick={() => setModal(true)}>
+    <Paper className="eventCard" onClick={()=>navigate("/direction")}>
             <Box style={{display:"flex",justifyContent:"space-between"}}>
                 <Box style={{color:"white"}}>
                     <Typography variant='h5' className='font'>Tect Edu Fair</Typography>

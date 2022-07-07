@@ -10,8 +10,10 @@ import MobileDevelopment from "../assets/images/MD.png"
 import Cyber from "../assets/images/Cyber.png"
 import Village from '../components/Villages/Village'
 import "../assets/styles/villages.css"
+import { useNavigate } from 'react-router-dom'
 
 const Villages = () => {
+    const navigate = useNavigate();
   return (
     <Box>
         <AppBar signupApp="true">
@@ -27,6 +29,7 @@ const Villages = () => {
             <Button
               className="col-white"
               sx={{ textDecoration: "none", color: "white",paddingRight:"2vmax" }}
+              onClick={()=>navigate("/login")}
             >
               Login/Signup
             </Button>

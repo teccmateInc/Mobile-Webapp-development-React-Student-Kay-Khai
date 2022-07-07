@@ -11,9 +11,11 @@ import Exhibitor5 from "../assets/images/Exhibitor5.png";
 import "../assets/styles/exhibitor.css";
 import Exhibitor from "../components/Exhibitors/Exhibitor";
 import SearchBox from "../components/Exhibitors/SearchBox";
+import { useNavigate } from "react-router-dom";
 
 
 const Exhibitors = () => {
+    const navigate = useNavigate();
   return (
     <Box>
       <AppBar signupApp="true">
@@ -33,6 +35,7 @@ const Exhibitors = () => {
               color: "white",
               paddingRight: "2vmax",
             }}
+            onClick={()=>navigate("/login")}
           >
             Login/Signup
           </Button>
