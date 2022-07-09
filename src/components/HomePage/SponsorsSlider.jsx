@@ -10,13 +10,23 @@ const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay:true
     
 }
 const SponsorsSlider = () => {
   return (
-    <Box>
+    <Box style={{overflow:"hidden"}}>
       <Slider {...settings} className="sponserSlider">
+        <div>
+        <img src={puma} className="sponserImage"/>
+        </div>
+        <div style={{ padding: "2vmax" }}>
+        <img src={AllState} className="sponserImage"/>
+        </div>
+        <div style={{ padding: "2vmax" }}>
+        <img src={Bajaj} className="sponserImage"/>
+        </div>
         <div>
         <img src={puma} className="sponserImage"/>
         </div>

@@ -32,16 +32,12 @@ const JoinAs = ({modal,setModal}) => {
       >
         <Box className='joinAsModal'>
             <Typography  style={{padding:"1vmax 0"}}>
-                <Link to="/signup" style={{textDecoration:"none",color:"black"}}>Join As Atendee</Link>
+                <Link to="/login" style={{textDecoration:"none",color:"black"}}>Join As Atendee</Link>
             </Typography>
             <div style={{borderBottom:"1px solid rgba(0,0,0,0.3)",width:"80%"}}></div>
-            <Typography  style={{padding:"1vmax 0"}}>
-                Join As Sponsor
-            </Typography>
+            <Link to="/login" style={{textDecoration:"none",color:"black"}}>Join As Sponsor</Link>
             <div style={{borderBottom:"1px solid rgba(0,0,0,0.3)",width:"80%"}}></div>
-            <Typography style={{padding:"1vmax 0"}}>
-                Join As Exhibitor
-            </Typography>
+            <Link to="/login" style={{textDecoration:"none",color:"black"}}>Join As Exhibitor</Link>
 
         </Box>
       </Modal>

@@ -87,7 +87,7 @@
             width:100vw;
             max-width:100%;
             margin:0;
-            padding:2vmax 0;
+            padding:1.5vmax 0;
             background:#D9D9D9;
 }
 .addBtnContainer{
@@ -169,6 +169,9 @@
 }
 .sponserBox{
 bottom:10px
+}
+.sponsorsContainer{
+padding: 2vmax 0;
 }
 .sponserName{
     line-height: 1 !important;

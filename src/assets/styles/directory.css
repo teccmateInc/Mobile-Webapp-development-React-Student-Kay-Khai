@@ -1,0 +1,20 @@
+.villageSliderCard{
+    width:500px;
+    height:230px;
+    background:linear-gradient(to right,#11aa9b,#4FD2C2) !important;
+    padding:2vmax;
+}
+.ExhibitorImage{
+    width:320px;
+    height:180px;
+}
+@media screen and (max-width:800px) {
+    .villageSliderCard{
+        width:90%;
+    height:200px;
+    }
+    .ExhibitorImage{
+        width:170px;
+        height:150px;
+    }
+}

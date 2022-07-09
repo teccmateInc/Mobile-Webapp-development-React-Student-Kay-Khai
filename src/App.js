@@ -9,6 +9,7 @@ import Villages from "./pages/Villages";
 import Exhibitors from "./pages/ExhibitorPage";
 import VillageDetails from "./pages/VillageDetails";
 import ExhibitorDetails from "./pages/ExhibitorDetailPage";
+import DirectoryPage from "./pages/DirectoryPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="village/:id" element={<VillageDetails />} />
             <Route path="exhibitors" element={<Exhibitors />} />
             <Route path="exhibitor/:id" element={<ExhibitorDetails />} />
+            <Route path="directory" element={<DirectoryPage />} />
 
           </Route>
         </Routes>
