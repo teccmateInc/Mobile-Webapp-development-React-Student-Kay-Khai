@@ -20,7 +20,7 @@ const DirectoryPage = () => {
             variant="h5"
             sx={{ fontFamily: "Montserrat", color: "white" }}
           >
-            EXHIBITORS
+            DIRECTORY
           </Typography>
         </MenuBar>
         <Box className="">
@@ -48,7 +48,14 @@ const DirectoryPage = () => {
         </div>
       </Box>
       <Box style={{ margin: "3vmax 2vmax", overflow: "hidden" }}>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            mx: { md: "1vmax" },
+          }}
+        >
           <Typography
             variant="h3"
             className="activitesHeading"
@@ -60,24 +67,27 @@ const DirectoryPage = () => {
             <Typography>View All</Typography>
           </Link>
         </Box>
-        <Box style={{ marginLeft: { xs: "1vmax", md: "3vmax" } }}>
+        <Box sx={{ marginLeft: { xs: "1vmax", md: "3vmax" } }}>
           <VillageSlider />
         </Box>
       </Box>
       <Box style={{ margin: "3vmax 2vmax", overflow: "hidden" }}>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Typography
-            variant="h3"
-            className="activitesHeading"
-            style={{ marginLeft: "2vmax" }}
-          >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            mx: { md: "1vmax" },
+          }}
+        >
+          <Typography variant="h3" className="activitesHeading">
             Exhibitors
           </Typography>
           <Link to="/exhibitors">
             <Typography>View All</Typography>
           </Link>
         </Box>
-        <Box style={{ marginLeft: { xs: "1vmax", md: "3vmax" } }}>
+        <Box sx={{ mx: { xs: "1vmax", md: "3vmax" } }}>
           <ExhibitorSlider />
         </Box>
       </Box>

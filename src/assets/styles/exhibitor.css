@@ -48,6 +48,10 @@
     justify-content: space-between;
     align-items: center;
 }
+.materialSize{
+    width:inherit;
+    height:115px;
+}
 @media screen and (max-width:600px) {
     .exhibitorImg{
         width: 176px;
@@ -58,5 +62,8 @@
     font-size:1.5vmax !important;
     font-weight: 600 !important;
     padding-left:1.3vmax;
-    }
+ }
+.materialSize{
+    height:75px;
+}
 }

@@ -5,8 +5,8 @@
     padding:2vmax;
 }
 .ExhibitorImage{
-    width:320px;
-    height:180px;
+    width:90%;
+    height:200px;
 }
 @media screen and (max-width:800px) {
     .villageSliderCard{

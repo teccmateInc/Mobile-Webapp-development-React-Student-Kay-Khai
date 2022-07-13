@@ -9,6 +9,7 @@ import Quiz from "../../assets/images/Quiz.png";
 import ActivityCard from "./ActivityCard";
 
 const settings = {
+  dots:true,
   infinite: true,
   speed: 500,
   slidesToShow: 3,
@@ -52,7 +53,7 @@ const settings = {
 };
 const ActivitiesSlider = () => {
   return (
-    <Box>
+    <Box >
       <Slider {...settings}>
         <ActivityCard activityName="Lucky Draw" sponserBy="Sponsered By" sponserName="hanu." ImgSrc={WheelofFortune}/>
         <ActivityCard activityName="Treasure Hunt" sponserBy="Sponsered By" sponserName="hanu." ImgSrc={Treasure}/>

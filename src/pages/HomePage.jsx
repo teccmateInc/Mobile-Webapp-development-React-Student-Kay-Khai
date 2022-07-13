@@ -9,9 +9,7 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import AppBar from "../components/layout/AppBar";
-import { Apps } from "@mui/icons-material";
 import "../assets/styles/homepage.css";
-import EventCard from "../components/HomePage/EventCard";
 import ActivitiesSlider from "../components/HomePage/ActivitiesSlider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,6 +19,7 @@ import JoinAs from "../components/HomePage/JoinAs";
 import Sidebar from "../components/layout/Header";
 import MenuBar from "../components/layout/MenuBar";
 import { useNavigate } from "react-router-dom";
+import EventSlider from "../components/HomePage/EventSlider";
 
 const HomePage = () => {
   const [drawerOpen, setDrawerOpen] = useState({ left: false });
@@ -57,15 +56,15 @@ const HomePage = () => {
         </Box>
       </AppBar>
       <Box>
+
         <Box
           style={{
-            display: "flex",
-            justifyContent: "center",
-            margin: "2vmax 0",
+            margin: "2vmax auto",
+            overflow:"hidden"
           }}
-        >
-          <EventCard />
-        </Box>
+          >
+          <EventSlider />
+          </Box>
         <Box style={{ margin: "4vmax 2vmax", overflow: "hidden" }}>
           <Typography
             variant="h3"

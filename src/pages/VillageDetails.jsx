@@ -7,7 +7,7 @@ import {
   Paper,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import AppBar from "../components/layout/AppBar";
 import MenuBar from "../components/layout/MenuBar";
 import { HomeOutlined, UploadOutlined } from "@mui/icons-material";
@@ -15,8 +15,14 @@ import { useNavigate } from "react-router-dom";
 import GameDev from "../assets/images/GameDev.png";
 import { Container } from "@mui/system";
 import Workshop from "../components/villageDetails/workshop";
+import { FileIcon, defaultStyles } from "react-file-icon";
 const VillageDetails = () => {
   const navigate = useNavigate();
+  const [file, setFile] = useState([]);
+  const handleFileChange = (e) => {
+    setFile([...file, e.target.files[0]]);
+    console.log(e.target.files[0]);
+  };
   return (
     <Box>
       <AppBar signupApp="true">
@@ -88,15 +94,62 @@ const VillageDetails = () => {
                 <Typography variant="h5">Materials</Typography>
                 <label htmlFor="icon-button-file">
                   <Input
-                    accept="image/*"
+                    // accept="image/*"
                     id="icon-button-file"
                     type="file"
                     style={{ display: "none" }}
+                    onChange={handleFileChange}
                   />
                   <IconButton aria-label="upload picture" component="span">
                     <UploadOutlined />
                   </IconButton>
                 </label>
+              </Box>
+              <Box sx={{ display: "flex" }}>
+                {file &&
+                  file.map((f) => {
+                    let imageType = ["gif", "jpeg", "jpg", "png"];
+                    let fileType = f.name.split(".").at(-1);
+                    return (
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        }}
+                      >
+                        <Box
+                          sx={{
+                            width: { xs: "60px", md: "90px" },
+                            height: { xs: "60px", md: "90px" },
+                            marginRight: "2vmax",
+                          }}
+                        >
+                          {imageType.includes(fileType) ? (
+                            <img
+                              className="materialSize"
+                              src={URL.createObjectURL(f)}
+                            />
+                          ) : (
+                            <FileIcon
+                              extension={fileType}
+                              {...defaultStyles[fileType]}
+                            />
+                          )}
+                        </Box>
+                        <Typography
+                          sx={{
+                            mt: "2vmax",
+                            mr: "1.3vmax",
+                            fontSize: { xs: "1.5vmax", md: "0.8vmax" },
+                            textAlign: "center",
+                          }}
+                        >
+                          {f.name}
+                        </Typography>
+                      </div>
+                    );
+                  })}
               </Box>
             </Paper>
           </Box>
