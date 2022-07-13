@@ -36,6 +36,15 @@
     display: flex;
     justify-content: center;
     margin-top: -9px;
+    position: relative;
+}
+.exhibitorInfoBox{
+    width: 100%;
+    height: 12vh;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    bottom: 20px;
+    border-radius:0px 0px 20px 20px;
 }
 .coursesContainer{
     padding: 3vmax;
@@ -52,6 +61,10 @@
     width:inherit;
     height:115px;
 }
+.contactIcon{
+    font-size:27px !important;
+    padding:0.5vmax;
+}
 @media screen and (max-width:600px) {
     .exhibitorImg{
         width: 176px;
@@ -62,6 +75,13 @@
     font-size:1.5vmax !important;
     font-weight: 600 !important;
     padding-left:1.3vmax;
+ }
+ .exhibitorInfoBox{
+    bottom:12px;
+ }
+ .contactIcon{
+    font-size:20px !important;
+    padding:1vmax; 
  }
 .materialSize{
     height:75px;

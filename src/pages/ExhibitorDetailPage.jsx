@@ -10,10 +10,16 @@ import {
 import React, { useState } from "react";
 import AppBar from "../components/layout/AppBar";
 import MenuBar from "../components/layout/MenuBar";
-import { HomeOutlined, UploadOutlined } from "@mui/icons-material";
+import {
+  Email,
+  HomeOutlined,
+  Message,
+  Phone,
+  UploadOutlined,
+} from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import StPauls from "../assets/images/StPauls.png";
-import { Container } from "@mui/system";
+import Gmap from "../assets/images/Gmap.png";
 import Course from "../components/ExhibitorDetails/Course";
 import { FileIcon, defaultStyles } from "react-file-icon";
 const ExhibitorDetails = () => {
@@ -48,6 +54,46 @@ const ExhibitorDetails = () => {
           <Box style={{ display: "flex", justifyContent: "center" }}>
             <Box className="exhibitorImgBox">
               <img src={StPauls} className="villageDetailImg" />
+              <IconButton>
+                <img
+                  src={Gmap}
+                  style={{ position: "absolute", right: "20px", top: "20px" }}
+                />
+              </IconButton>
+              <Box className="exhibitorInfoBox">
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    padding: "1vmax 2vmax",
+                  }}
+                >
+                  <Box className="col-white">
+                    <Typography variant="h5">St.Pauls School</Typography>
+                    <Typography>Rourkela</Typography>
+                  </Box>
+                  <Box sx={{ display: "flex",alignItems:"flex-end",pb:"0.5vmax" }}>
+                    <IconButton
+                      sx={{
+                        background: "#5185FF",
+                        color: "white",
+                        mx: "0.5vmax",
+                      }}
+                    >
+                      <Phone className="contactIcon" />
+                    </IconButton>
+                    <IconButton
+                      sx={{
+                        background: "orange",
+                        color: "white",
+                        mx: "0.5vmax",
+                      }}
+                    >
+                      <Message className="contactIcon" />
+                    </IconButton>
+                  </Box>
+                </Box>
+              </Box>
             </Box>
           </Box>
           <Box sx={{ display: "flex", pl: "2vmax", py: "2vmax" }}>
