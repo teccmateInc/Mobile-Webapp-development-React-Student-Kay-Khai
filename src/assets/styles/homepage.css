@@ -2,6 +2,7 @@
 .btnContainer{
     display:flex;
     justify-content:center;
+    align-items: center;
 }
 .luckydrawBtn{
     background-color:#FFFFFF !important;
@@ -10,6 +11,17 @@
     width:270px;
     height:55px;
     border-radius:100px !important;
+}
+.pointsBtn{
+    width:220px;
+    font-weight:700 !important;
+    border-radius:30px !important;
+    height:47px;
+    font-family:'Montserrat' !important;
+    font-size:1.2vmax !important;
+    margin-right:1vmax !important;
+    background:white !important;
+    color:#50B5D9 !important;
 }
 .eventCard{
     width:50%;
@@ -37,15 +49,15 @@
 
 .activitiesCard{
     display: flex;
-                  color: white !important;
-                  flex-direction: column;
-                  align-items: center;
-                  background:linear-gradient(to top,#5659C4, #6164CF) !important;
-                  padding: 2vmax;
-                  margin:0 2vmax;
-                  border-radius: 10px !important;
-                  height: 300px;
-                  position: relative;
+    color: white !important;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(to top,#5659C4, #6164CF) !important;
+    padding: 2vmax;
+    margin:0 2vmax;
+    border-radius: 10px !important;
+    height: 300px;
+    position: relative;
 }
 
 .sliderImage{
@@ -117,10 +129,12 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .slideCenter .slick-slide > div:nth-child(1) {
     display:flex;
     justify-content: center;
 }
+
 
 @media screen and (max-width:600px) {
     .font{
@@ -132,8 +146,20 @@
 }
 .luckydrawBtn{
     height:45px;
+    width:230px;
     margin-right:0px !important;
     margin-left: 2vmax !important;
+}
+.pointsBtn{
+    width:125px;
+    font-weight:800 !important;
+    border-radius:30px !important;
+    height:37px;
+    font-family:'Montserrat';
+    font-size:1.4vmax !important;
+    margin-right:1vmax;
+    background:white !important;
+    color:#50B5D9 !important;
 }
 .eventCard{
     width:80%;
@@ -147,7 +173,7 @@
     font-size:2vmax !important;
 }
 .activitiesCard{
-    height: 165px;
+    height: 150px;
     margin:0 0.5vmax;
     padding: 1vmax;
 

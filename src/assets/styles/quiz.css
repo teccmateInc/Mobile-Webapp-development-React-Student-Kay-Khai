@@ -1,0 +1,58 @@
+.quizPic{
+    width:140px;
+    height:140px;
+    margin-right: 1vmax;
+}
+.joinQuizBtn{
+    position:absolute !important;
+    bottom:0;
+    right:0;
+    background:linear-gradient(to bottom,#5185FF,#3F42AF) !important;
+    border-radius: 20px !important;
+    width: 120px !important;
+
+}
+.MuiStepper-root{
+    /* background:linear-gradient(to right,#5185FF,#4FD2C2) !important; */
+    justify-content: space-around !important;
+    padding:4vmax;
+    padding-top: 2vmax !important;
+    width:80%;
+}
+.MuiStepIcon-root.Mui-active circle{
+    /* background: #5185FF !important; */
+    color:white !important;
+}
+.MuiStepIcon-root.Mui-active text{
+    fill:#5185FF
+}
+/* .MuiButton-root{
+    color:black !important 
+}
+.MuiButton-root:hover{
+    color:white !important 
+} */
+
+.MuiStepIcon-root{
+    font-size:70px !important;
+    color:transparent !important;
+    border-radius: 50% !important;
+    border:1px solid white;
+}
+.MuiStepConnector-root{
+    display:none
+}
+@media screen and (max-width:600px) {
+.quizPic{
+    width: 110px;
+    height: 110px;
+}
+.joinQuizBtn{
+    width: 80px !important;
+    font-size: 1.8vmax !important;
+    text-transform: none !important;
+}
+.MuiStepIcon-root{
+    font-size: 40px !important;
+}
+}

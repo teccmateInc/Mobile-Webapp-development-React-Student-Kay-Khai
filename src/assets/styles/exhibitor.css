@@ -9,8 +9,8 @@
     text-align: center;
 }
 .MuiFormControl-root .MuiOutlinedInput-root{
-    border-radius: 50px !important;
-    border:1px solid #5185FF !important;
+    /* border-radius: 50px !important; */
+    /* border:1px solid #5185FF !important; */
 }
 .searchBoxContainer{
     margin: 2vmax 4vmax;

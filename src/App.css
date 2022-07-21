@@ -1,5 +1,29 @@
 .col-white{
-    color: white;
+    color: white !important;
+}
+.col-black{
+    color: black !important;
+}
+.col-red{
+    color: red;
+}
+.col-green{
+    color:green;
+}
+.col-orange{
+    color: orange;
+}
+.col-aqua{
+    color: aqua;
+}
+.d-block{
+    display: block !important;
+}
+.d-none{
+    display: none !important;
+}
+.font-montserrat{
+    font-family: 'Montserrat' !important;
 }
 body{
     font-family: 'Montserrat', sans-serif !important;

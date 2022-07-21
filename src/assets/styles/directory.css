@@ -4,6 +4,7 @@
     background:linear-gradient(to right,#11aa9b,#4FD2C2) !important;
     padding:2vmax;
 }
+
 .ExhibitorImage{
     width:90%;
     height:200px;
@@ -14,7 +15,7 @@
     height:200px;
     }
     .ExhibitorImage{
-        width:170px;
+        width:160px !important;
         height:150px;
     }
 }

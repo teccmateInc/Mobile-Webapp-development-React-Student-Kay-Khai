@@ -58,7 +58,7 @@
 
 @media screen and (max-width:600px) {
 .loginContainer{
-    height: 110vh;
+    height: 100%;
 }
 .LogoText{
     padding-top: 5vmax;

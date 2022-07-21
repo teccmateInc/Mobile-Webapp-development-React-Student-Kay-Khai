@@ -4,6 +4,9 @@
     height:13vh;
     display:flex;
     align-items:center;
+    box-shadow: 0px 3px 3px  rgba(0,0,0,0.4) !important;
+    z-index: 20 !important;
+    /* border-bottom: 3px solid rgba(0,0,0,0.05); */
     /* justify-content: space-between; */
     background:linear-gradient(to right,#5185FF,#4FD2C2)
 }
@@ -13,8 +16,17 @@
     height:18vh;
     display:flex;
     align-items:center;
+    z-index: 20 !important;
+    box-shadow: 0px 3px 3px  rgba(0,0,0,0.4) !important;
     /* justify-content: space-between; */
+    /* border-bottom: 3px solid rgba(0,0,0,0.05); */
     background:linear-gradient(to right,#5185FF,#4FD2C2)
+}
+.titleName{
+    font-size:1.5vmax !important;
+    font-weight:500 !important;
+    font-family: "Montserrat" !important;
+    color: white !important; 
 }
 .MuiDrawer-root,.MuiDrawer-root div{
     top:0 !important;
@@ -47,13 +59,16 @@
             align-items: center;
         }
         .MuiDrawer-root,.MuiDrawer-root div{
-            top:28% !important;
+            top:18% !important;
             width:100vw
             }
     .listItem{
         padding:0vmax 1vmax;
         padding-left: 3vmax;
         
+    }
+    .titleName{
+        font-size: 3.4vmax !important;
     }
 }
 @media screen and (min-width:600px) and (max-width:970px){

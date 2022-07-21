@@ -1,0 +1,44 @@
+.QRcontainer{
+    width:100vw;
+    max-width:100%;
+    height:87vh;
+    background:linear-gradient(to right,#5185FF,#4FC5CC);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+.QRBox{
+    width:70%;
+    height:80%;
+    border-radius:20px !important;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:2vmax 0;
+}
+.QRImg{
+    width:230px;
+    height:230px;
+}
+.backBtn{
+    background:linear-gradient(to right,#5185FF,#4FC5CC) !important;
+    color:white !important;
+    margin-top:2vmax !important;
+}
+@media screen and (max-width:600px) {
+.QRcontainer{
+    height: 82vh;
+}
+.QRBox{
+    width: 95%;
+    height:85%
+}
+.QRImg{
+    width: 210px;
+    height: 210px;
+}
+.backBtn{
+    margin-top: 4vmax !important;
+}
+}

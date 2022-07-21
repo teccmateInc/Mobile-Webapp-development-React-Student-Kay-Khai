@@ -10,7 +10,7 @@ const MenuBar = ({children}) => {
     <Box style={{ display: "flex", alignItems: "center", flex: 1 }}>
           <Apps
             className="col-white"
-            sx={{ mx: "3vmax" }}
+            sx={{ mx:{xs:"2vmax",md: "3vmax"} }}
             fontSize="medium"
             onClick={() => setDrawerOpen({ left: !drawerOpen.left })}
             />

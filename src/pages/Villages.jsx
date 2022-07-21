@@ -20,7 +20,7 @@ const Villages = () => {
           <MenuBar>
             <Typography
               variant="h5"
-              sx={{ fontFamily: "Montserrat", color: "white" }}
+              className="titleName"
             >
               VILLAGES
             </Typography>

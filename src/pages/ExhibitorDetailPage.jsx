@@ -35,7 +35,7 @@ const ExhibitorDetails = () => {
         <MenuBar>
           <Typography
             variant="h5"
-            sx={{ fontFamily: "Montserrat", color: "white" }}
+            className="titleName"
           >
             EXHIBITOR DETAIL
           </Typography>

@@ -18,7 +18,7 @@ const DirectoryPage = () => {
         <MenuBar>
           <Typography
             variant="h5"
-            sx={{ fontFamily: "Montserrat", color: "white" }}
+            className="titleName"
           >
             DIRECTORY
           </Typography>

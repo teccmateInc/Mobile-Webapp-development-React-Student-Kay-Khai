@@ -43,7 +43,7 @@ const Sidebar = ({ drawerOpen, setDrawerOpen }) => {
         <ListItem>
             <Box className="listItem">
                 <StarBorderOutlined style={{paddingRight:"1vmax"}}/>
-                <Typography fontSize="14px" fontWeight="500">Things To Do(Activities)</Typography>
+                <Link to="/thingstodo" style={{textDecoration:"none",color:"black"}}><Typography fontSize="14px" fontWeight="500">Things To Do(Activities)</Typography></Link>
             </Box>
         </ListItem>
         <Divider />

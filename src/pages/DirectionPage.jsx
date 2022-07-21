@@ -21,7 +21,7 @@ export class Direction extends Component {
           <MenuBar>
             <Typography
               variant="h5"
-              sx={{ fontFamily: "Montserrat", color: "white" }}
+              className="titleName"
             >
               DIRECTION
             </Typography>
