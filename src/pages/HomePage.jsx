@@ -11,10 +11,8 @@ import {
 import React, { useState } from "react";
 import AppBar from "../components/layout/AppBar";
 import "../assets/styles/homepage.css";
-import ActivitiesSlider from "../components/HomePage/ActivitiesSlider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SponsorsSlider from "../components/HomePage/SponsorsSlider";
 import { Add } from "@mui/icons-material";
 import JoinAs from "../components/HomePage/JoinAs";
 import Sidebar from "../components/layout/Header";
@@ -22,7 +20,7 @@ import MenuBar from "../components/layout/MenuBar";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useNavigate } from "react-router-dom";
 import EventSlider from "../components/HomePage/EventSlider";
-
+import AuthorizedAppbar from "../components/HomePage/AuthorizedAppbar"
 const HomePage = ({ test, auth }) => {
   const [drawerOpen, setDrawerOpen] = useState({ left: false });
   const [modal, setModal] = useState(false);
@@ -38,37 +36,38 @@ const HomePage = ({ test, auth }) => {
   const renderAppBar = () => {
     if (isAuthenticated) {
       return (
-        <AppBar>
-          <MenuBar>
-            <Box style={{ display: "flex", flexDirection: "column" }}>
-              <Grid container spacing={1} alignItems="center">
-                <Grid item>
-                  <Avatar src={user.picture} sx={{ margin: 1 }} />
-                </Grid>
-                <Grid item>
-                <Typography
-              variant="h6"
-              className="col-white font-montserrat"
-              sx={{ fontSize:{xs:"3.2vmax", md:"1.8vmax"}}}
-            >
-              {user.name}
-            </Typography>
-            <Typography className="col-white font-montserrat" sx={{ fontSize:{xs:"2.5vmax", md:"1.5vmax"} }}>
-            Atendee
-            </Typography>
-                </Grid>
-              </Grid>
-            </Box>
-          </MenuBar>
-          <Box className="btnContainer">
-            <Button
-              variant="contained"
-              className="luckydrawBtn"
-              onClick={() => logout()}>
-              LOGOUT
-            </Button>
-          </Box>
-        </AppBar>
+        <AuthorizedAppbar />
+        // <AppBar>
+        //   <MenuBar>
+        //     <Box style={{ display: "flex", flexDirection: "column" }}>
+        //       <Grid container spacing={1} alignItems="center">
+        //         <Grid item>
+        //           <Avatar src={user.picture} sx={{ margin: 1 }} />
+        //         </Grid>
+        //         <Grid item>
+        //         <Typography
+        //       variant="h6"
+        //       className="col-white font-montserrat"
+        //       sx={{ fontSize:{xs:"3.2vmax", md:"1.8vmax"}}}
+        //     >
+        //       {user.name}
+        //     </Typography>
+        //     <Typography className="col-white font-montserrat" sx={{ fontSize:{xs:"2.5vmax", md:"1.5vmax"} }}>
+        //     Atendee
+        //     </Typography>
+        //         </Grid>
+        //       </Grid>
+        //     </Box>
+        //   </MenuBar>
+        //   <Box className="btnContainer">
+        //     <Button
+        //       variant="contained"
+        //       className="luckydrawBtn"
+        //       onClick={() => logout()}>
+        //       LOGOUT
+        //     </Button>
+        //   </Box>
+        // </AppBar>
       );
     }
     else {
