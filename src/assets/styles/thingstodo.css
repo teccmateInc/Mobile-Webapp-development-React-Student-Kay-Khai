@@ -13,8 +13,8 @@
 }
 @media screen and  (max-width:600px) {
     .thingstodoCard{
-    padding: 2vmax !important;
-    margin:3vmax 2vmax !important;
+    padding: 1.5vmax 2vmax !important;
+    margin:1.4vmax 2vmax !important;
 
     }    
 }

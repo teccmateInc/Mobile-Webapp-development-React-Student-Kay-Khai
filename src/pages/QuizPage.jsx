@@ -1,26 +1,30 @@
-import { Box, Button, Grid, IconButton, Paper, Typography } from '@mui/material'
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import AppBar from '../components/layout/AppBar'
-import MenuBar from '../components/layout/MenuBar'
+import {
+  Box,
+  Button,
+  Grid,
+  IconButton,
+  Paper,
+  Typography,
+} from "@mui/material";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import AppBar from "../components/layout/AppBar";
+import MenuBar from "../components/layout/MenuBar";
 import QuizImg from "../assets/images/QuizImg.png";
 import Gmap from "../assets/images/Gmap.png";
-import { Circle, Message, Phone } from '@mui/icons-material'
-import { useState } from 'react'
-import QuizBox from "../assets/images/QuizBox.png"
-import QSCard from '../components/Quiz&Survey/QuizSurveyCard'
-import "../assets/styles/quiz.css"
+import { Circle, Message, Phone } from "@mui/icons-material";
+import { useState } from "react";
+import QuizBox from "../assets/images/QuizBox.png";
+import QSCard from "../components/Quiz&Survey/QuizSurveyCard";
+import "../assets/styles/quiz.css";
 const QuizPage = () => {
-    const navigate = useNavigate();
-    const[online,setOnline] =useState(true);
+  const navigate = useNavigate();
+  const [online, setOnline] = useState(true);
   return (
     <Box>
       <AppBar signupApp="true">
         <MenuBar>
-          <Typography
-            variant="h5"
-            className="titleName"
-          >
+          <Typography variant="h5" className="titleName">
             QUIZ
           </Typography>
         </MenuBar>
@@ -32,65 +36,106 @@ const QuizPage = () => {
               color: "white",
               paddingRight: "2vmax",
             }}
-            onClick={()=>navigate("/login")}
+            onClick={() => navigate("/login")}
           >
             Login/Signup
           </Button>
         </Box>
       </AppBar>
       <Box>
-      <Box style={{ display: "flex", justifyContent: "center" }}>
-        <Box sx={{ width: { xs: "100%", md: "85%" } }}>
-          <Box style={{ display: "flex", justifyContent: "center" }}>
-            <Box className="exhibitorImgBox">
-              <img src={QuizImg} className="villageDetailImg" />
-              
-              <Box className="exhibitorInfoBox">
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    height:"100%",
-                    alignItems:"center",
-                    padding: "0 2vmax",
-                  }}
-                >
-                    
-                  <Box className="col-white" sx={{display:"flex",alignItems:"center"}}>
-                  <IconButton>
-                <img
-                  src={Gmap}
-                />
-              </IconButton>
-                    <Typography variant="h5" sx={{pl:"2vmax"}}>Online</Typography>
-                  </Box>
-                  <Box sx={{ display: "flex",alignItems:"flex-end",pb:"0.5vmax" }}>
+        <Box style={{ display: "flex", justifyContent: "center" }}>
+          <Box sx={{ width: { xs: "100%", md: "85%" } }}>
+            <Box style={{ display: "flex", justifyContent: "center" }}>
+              <Box className="exhibitorImgBox">
+                <img src={QuizImg} className="villageDetailImg" />
+
+                <Box className="exhibitorInfoBox">
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      height: "100%",
+                      alignItems: "center",
+                      padding: "0 2vmax",
+                    }}
+                  >
+                    <Box
+                      className="col-white"
+                      sx={{ display: "flex", alignItems: "center" }}
+                    >
+                      <IconButton>
+                        <img src={Gmap} />
+                      </IconButton>
+                      <Typography variant="h5" sx={{ pl: "2vmax" }}>
+                        Online
+                      </Typography>
+                    </Box>
+                    {/* <Box sx={{ display: "flex",alignItems:"flex-end",pb:"0.5vmax" }}>
                     <Paper sx={{display:"flex",padding:"0.5vmax 2vmax",borderRadius:"30px",alignItems:"center"}}>
                         <Typography sx={{pr:{xs:"3vmax",md:"1vmax"}}}>Status</Typography>
                         <Circle className={`${online ? "col-green" : "col-red"} `}/>
                     </Paper>
+                  </Box> */}
                   </Box>
                 </Box>
               </Box>
             </Box>
+            <Box
+              sx={{
+                display: "flex",
+                px: "2vmax",
+                textAlign: "left",
+                py: "2vmax",
+              }}
+            >
+              <Typography
+                className="font-montserrat"
+                sx={{ fontSize: { xs: "2.2vmax", md: "1.3vmax" } }}
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </Typography>
+            </Box>
           </Box>
-          <Box sx={{ display: "flex", px: "2vmax",textAlign:"left", py: "2vmax" }}>
-            <Typography className="font-montserrat" sx={{fontSize:{xs:"2.2vmax",md:"1.3vmax"}}}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-            </Typography>
-          </Box>
+        </Box>
+        <Box sx={{ display: "flex", justifyContent: "center", pb: "4vmax" }}>
+          <Grid
+            container
+            justifyContent="space-between"
+            spacing={{ md: 4 }}
+            rowSpacing={5}
+            sx={{ p: "2vmax", width: { xs: "100%", md: "85%" } }}
+          >
+            <QSCard
+              Image={QuizBox}
+              Name="Quiz On Entertainment Media"
+              Company="Company Name"
+              Points="1 Points"
+              Join="Join Quiz"
+              link="/quiz/1"
+            />
+            <QSCard
+              Image={QuizBox}
+              Name="Quiz On Entertainment Media"
+              Company="Company Name"
+              Points="1 Points"
+              Join="Join Quiz"
+              link="/quiz/2"
+            />
+            <QSCard
+              Image={QuizBox}
+              Name="Quiz On Entertainment Media"
+              Company="Company Name"
+              Points="1 Points"
+              Join="Join Quiz"
+              link="/quiz/3"
+            />
+          </Grid>
+        </Box>
       </Box>
-      </Box>
-      <Box sx={{ display: "flex", justifyContent: "center",pb:"4vmax" }}>
-        <Grid container justifyContent="space-between" spacing={{md:4}} rowSpacing={5} sx={{p:"2vmax", width: { xs: "100%", md: "85%" } }}>
-        <QSCard Image={QuizBox} Name="Quiz On Entertainment Media" Company="Company Name" Points="1 Points" Join="Join Quiz" link="/quiz/1" />
-        <QSCard Image={QuizBox} Name="Quiz On Entertainment Media" Company="Company Name" Points="1 Points" Join="Join Quiz" link="/quiz/2"/>
-        <QSCard Image={QuizBox} Name="Quiz On Entertainment Media" Company="Company Name" Points="1 Points" Join="Join Quiz" link="/quiz/3"/>
-        </Grid>
-      </Box>
-      </Box>
-      </Box>
-  )
-}
+    </Box>
+  );
+};
 
-export default QuizPage
+export default QuizPage;

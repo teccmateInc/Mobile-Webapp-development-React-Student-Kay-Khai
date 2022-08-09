@@ -73,10 +73,10 @@ const BusinessAndLuckyDraw = () => {
                       }}
                     >
                       <Typography variant="h5">Main Hall</Typography>
-                      <Typography>17:30 IST</Typography>
+                      {/* <Typography>17:30 IST</Typography> */}
                     </Box>
                   </Box>
-                  <Box
+                  {/* <Box
                     sx={{
                       display: "flex",
                       alignItems: "flex-end",
@@ -98,7 +98,7 @@ const BusinessAndLuckyDraw = () => {
                         className={`${online ? "col-green" : "col-red"} `}
                       />
                     </Paper>
-                  </Box>
+                  </Box> */}
                 </Box>
               </Box>
             </Box>

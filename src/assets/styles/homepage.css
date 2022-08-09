@@ -81,7 +81,7 @@
     text-align:center;
 }
 .sponserName{
-    font-size: 3.4vmax !important;
+    font-size: 3vmax !important;
     text-align: center;
     line-height: 1 !important;
     color: orange; 
@@ -205,6 +205,7 @@ padding: 2vmax 0;
 }
 .sponserName{
     line-height: 1 !important;
+    font-size: 3.2vmax !important;
 }
 .sponserImage{
     width: 80px;

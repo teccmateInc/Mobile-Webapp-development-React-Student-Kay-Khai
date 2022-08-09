@@ -1,0 +1,33 @@
+.NFTModal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    background-color: white;
+    opacity:0.9;
+      border: none;
+      border-radius:15px;
+    /* boxShadow: 24; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.question{
+    padding: 1vmax;
+    cursor:pointer;
+              border-radius: 50%;
+              background-color: white;
+              width: 30px;
+              height: 30px;
+              position: absolute;
+              right: 20px;
+              top: -20px;
+}
+@media screen and (max-width:600px) {
+    .NFTModal{
+        width:80vw
+    }
+}

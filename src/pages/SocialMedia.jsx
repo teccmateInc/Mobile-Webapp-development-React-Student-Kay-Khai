@@ -77,10 +77,10 @@ const SocialMedia = () => {
                         }}
                       >
                         <Typography variant="h5">FB, Insta, Twitter</Typography>
-                        <Typography>12:00 - 19:00</Typography>
+                        {/* <Typography>12:00 - 19:00</Typography> */}
                       </Box>
                     </Box>
-                    <Box
+                    {/* <Box
                       sx={{
                         display: "flex",
                         alignItems: "flex-end",
@@ -102,7 +102,7 @@ const SocialMedia = () => {
                           className={`${online ? "col-green" : "col-red"} `}
                         />
                       </Paper>
-                    </Box>
+                    </Box> */}
                   </Box>
                 </Box>
               </Box>

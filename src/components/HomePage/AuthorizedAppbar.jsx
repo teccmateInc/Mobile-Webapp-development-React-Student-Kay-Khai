@@ -5,7 +5,7 @@ import MenuBar from "../layout/MenuBar";
 import QR from "../../assets/images/QR.png";
 import { useNavigate } from "react-router-dom";
 
-const AuthorizedAppbar = () => {
+const AuthorizedAppbar = ({logout}) => {
   const navigate = useNavigate();
   return (
     <>
@@ -35,9 +35,10 @@ const AuthorizedAppbar = () => {
               </Typography>
             </Box>
             <Box style={{ display: "flex", alignItems: "center" }}>
-              <Button variant="contained" className="pointsBtn">
-                10 points Earned
+              <Button variant="contained" className="pointsBtn" onClick={logout}>
+                LOGOUT
               </Button>
+              
               <Box>
                 <IconButton
                   style={{ background: "white", marginRight: "2vmax" }}

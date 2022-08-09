@@ -75,10 +75,10 @@ const TreasureHuntPage = () => {
                         }}
                       >
                         <Typography variant="h5">Anywhere</Typography>
-                        <Typography>12:00 - 19:00</Typography>
+                        {/* <Typography>12:00 - 19:00</Typography> */}
                       </Box>
                     </Box>
-                    <Box
+                    {/* <Box
                       sx={{
                         display: "flex",
                         alignItems: "flex-end",
@@ -100,7 +100,7 @@ const TreasureHuntPage = () => {
                           className={`${online ? "col-green" : "col-red"} `}
                         />
                       </Paper>
-                    </Box>
+                    </Box> */}
                   </Box>
                 </Box>
               </Box>

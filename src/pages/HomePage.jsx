@@ -21,6 +21,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useNavigate } from "react-router-dom";
 import EventSlider from "../components/HomePage/EventSlider";
 import AuthorizedAppbar from "../components/HomePage/AuthorizedAppbar"
+import ActivitiesSlider from '../components/HomePage/ActivitiesSlider';
+import SponsorsSlider from '../components/HomePage/SponsorsSlider';
 const HomePage = ({ test, auth }) => {
   const [drawerOpen, setDrawerOpen] = useState({ left: false });
   const [modal, setModal] = useState(false);
@@ -36,7 +38,7 @@ const HomePage = ({ test, auth }) => {
   const renderAppBar = () => {
     if (isAuthenticated) {
       return (
-        <AuthorizedAppbar />
+        <AuthorizedAppbar logout={logout}/>
         // <AppBar>
         //   <MenuBar>
         //     <Box style={{ display: "flex", flexDirection: "column" }}>
@@ -118,7 +120,7 @@ const HomePage = ({ test, auth }) => {
         >
           <EventSlider />
         </Box>
-        {/* <Box style={{ margin: "4vmax 2vmax", overflow: "hidden" }}>
+        <Box style={{ margin: "4vmax 2vmax", overflow: "hidden" }}>
           <Typography
             variant="h3"
             className="activitesHeading"
@@ -143,7 +145,7 @@ const HomePage = ({ test, auth }) => {
             <Add fontSize="large" className="addBtn" />
           </IconButton>
         </Box>
-        <JoinAs modal={modal} setModal={setModal} /> */}
+        <JoinAs modal={modal} setModal={setModal} />
       </Box>
       <Sidebar drawerOpen={drawerOpen} setDrawerOpen={setDrawerOpen} />
     </Box>

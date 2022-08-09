@@ -48,12 +48,7 @@ const VillageDetails = () => {
           <Box style={{ display: "flex", justifyContent: "center" }}>
             <Box className="villageDetailImgBox">
               <img src={GameDev} className="villageDetailImg" />
-              <Box className="villageDateBox">
-                <Box className="villageDate">
-                  <Typography variant="h6">12</Typography>
-                  <Typography variant="h6">July</Typography>
-                </Box>
-              </Box>
+              
               <Box className="villageTimeBox">
                 <Box
                   sx={{
@@ -62,8 +57,8 @@ const VillageDetails = () => {
                     alignItems: "center",
                   }}
                 >
-                  <Typography variant="h6">Game Development</Typography>
-                  <Typography>12:00 - 15:00</Typography>
+                  <Typography variant="h6" sx={{pl:2}}>Game Development</Typography>
+                  {/* <Typography>12:00 - 15:00</Typography> */}
                 </Box>
               </Box>
             </Box>

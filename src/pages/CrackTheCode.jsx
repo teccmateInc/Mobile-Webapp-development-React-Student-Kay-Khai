@@ -69,14 +69,14 @@ const CrackTheCode = () => {
                         flexDirection: "column",
                         pl: "2vmax",
                         justifyContent: "center",
-                        alignItems: "center",
+                        alignItems: "flex-start",
                       }}
                     >
                       <Typography variant="h5">Booth</Typography>
-                      <Typography>12:00 - 19:00</Typography>
+                      {/* <Typography>12:00 - 19:00</Typography> */}
                     </Box>
                   </Box>
-                  <Box
+                  {/* <Box
                     sx={{
                       display: "flex",
                       alignItems: "flex-end",
@@ -98,7 +98,7 @@ const CrackTheCode = () => {
                         className={`${online ? "col-green" : "col-red"} `}
                       />
                     </Paper>
-                  </Box>
+                  </Box> */}
                 </Box>
               </Box>
             </Box>

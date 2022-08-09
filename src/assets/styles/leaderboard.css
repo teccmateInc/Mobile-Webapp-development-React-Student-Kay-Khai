@@ -1,0 +1,35 @@
+.leaderboardFields  .MuiFormControl-root .MuiOutlinedInput-root{
+    background: linear-gradient(to bottom , #D9D9D9 ,#F3F3F3);
+    color:black !important;
+    font-weight:500;
+}
+
+
+.leaders .MuiGrid-item > div{
+    display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0 24px;
+          padding: 24px;
+          border-radius: 15px;
+          background: #D9D9D9;
+}
+.leaders .MuiGrid-item:nth-child(1) > div{
+    background: linear-gradient(to right, #FCB017, #FFE300);
+}
+.leaders .MuiGrid-item:nth-child(2) > div{
+    background: linear-gradient(to right, #AAAAAA, #D9D9D9);
+    
+}
+.leaders .MuiGrid-item:nth-child(3) > div{
+    background: linear-gradient(to right, #F4AA6B, #FFCB9D);
+
+}
+
+@media screen and (max-width:800px) {
+    .leaders .MuiGrid-item > div{
+        margin: 0 5px;
+        padding: 16px;
+
+    }
+}

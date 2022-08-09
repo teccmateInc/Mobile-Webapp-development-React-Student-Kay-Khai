@@ -50,42 +50,54 @@ const Sidebar = ({ drawerOpen, setDrawerOpen }) => {
         <ListItem>
             <Box className="listItem">
                 <img src={NFT} style={{paddingRight:"1vmax"}}/>
+                <Link to="/NFT" style={{textDecoration:"none",color:"black"}}>
                 <Typography fontSize="14px" fontWeight="500">NFT</Typography>
+                </Link>
             </Box>
         </ListItem>
         <Divider />
         <ListItem>
             <Box className="listItem">
                 <CardGiftcardOutlined style={{paddingRight:"1vmax"}}/>
+                <Link to="/reward" style={{textDecoration:"none",color:"black"}}>
                 <Typography fontSize="14px" fontWeight="500">Reward</Typography>
+                </Link>
             </Box>
         </ListItem>
         <Divider />
         <ListItem>
             <Box className="listItem">
                 <ContentCopyOutlined style={{paddingRight:"1vmax"}}/>
+                <Link to="/leaderboard" style={{textDecoration:"none",color:"black"}}>
                 <Typography fontSize="14px" fontWeight="500">LeaderBoard</Typography>
+                </Link>
             </Box>
         </ListItem>
         <Divider />
         <ListItem>
             <Box className="listItem">
                 <Camera style={{paddingRight:"1vmax"}}/>
+                <Link to="/gallery" style={{textDecoration:"none",color:"black"}}>
                 <Typography fontSize="14px" fontWeight="500">gallery</Typography>
+                </Link>
             </Box>
         </ListItem>
         <Divider />
         <ListItem>
             <Box className="listItem">
                 <TabletMacOutlined style={{paddingRight:"1vmax"}}/>
+                <Link to="/feedback" style={{textDecoration:"none",color:"black"}}>
                 <Typography fontSize="14px" fontWeight="500">Feedback/Complaint</Typography>
+                </Link>
             </Box>
         </ListItem>
         <Divider />
         <ListItem>
             <Box className="listItem">
                 <LogoutOutlined style={{paddingRight:"1vmax"}}/>
+                <Link to="/login" style={{textDecoration:"none",color:"black"}}>
                 <Typography fontSize="14px" fontWeight="500">Signup/Login</Typography>
+                </Link>
             </Box>
         </ListItem>
         <Divider />

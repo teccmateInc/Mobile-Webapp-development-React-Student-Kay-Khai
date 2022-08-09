@@ -64,12 +64,12 @@ const SurveyPage = () => {
               </IconButton>
                     <Typography variant="h5" sx={{pl:"2vmax"}}>Online</Typography>
                   </Box>
-                  <Box sx={{ display: "flex",alignItems:"flex-end",pb:"0.5vmax" }}>
+                  {/* <Box sx={{ display: "flex",alignItems:"flex-end",pb:"0.5vmax" }}>
                     <Paper sx={{display:"flex",padding:"0.5vmax 2vmax",borderRadius:"30px",alignItems:"center"}}>
                         <Typography sx={{pr:{xs:"3vmax",md:"1vmax"}}}>Status</Typography>
                         <Circle className={`${online ? "col-green" : "col-red"} `}/>
                     </Paper>
-                  </Box>
+                  </Box> */}
                 </Box>
               </Box>
             </Box>
