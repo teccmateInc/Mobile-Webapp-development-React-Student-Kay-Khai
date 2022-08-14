@@ -28,6 +28,16 @@ import SocialMedia from "./pages/SocialMedia";
 import MediaDetails from "./pages/MediaDetails.jsx";
 import QuizDetailsPage from "./pages/QuizDetailsPage";
 import SurveyDetailsPage from "./pages/SurveyDetailsPage";
+import Gallery from "./pages/Gallery";
+import GalleryDetails from "./pages/GalleryDetails";
+import LeaderBoard from "./pages/LeaderBoard";
+import NFT from "./pages/NFT";
+import FeedbackAndComplaint from "./pages/FeedbackAndComplaint";
+import Voting from "./pages/Voting"
+import Rewards from "./pages/Rewards";
+import VotingDetailsPage from "./pages/VotingDetails";
+import Merchandize from "./pages/Merchandize";
+import MerchandizeDetails from "./pages/MerchandizeDetails";
 
 function App({ login, auth }) {
   const { getAccessTokenSilently } = useAuth0();
@@ -61,12 +71,22 @@ function App({ login, auth }) {
             <Route path="quiz/:id" element={<QuizDetailsPage />} />
             <Route path="survey" element={<SurveyPage />} />
             <Route path="survey/:id" element={<SurveyDetailsPage />} />
+            <Route path="voting" element={<Voting />} />
+            <Route path="voting/:id" element={<VotingDetailsPage />} />
             <Route path="treasurehunt" element={<TreasureHuntPage />} />
             <Route path="IGcontest" element={<IGContest />} />
             <Route path="crackthecode" element={<CrackTheCode />} />
             <Route path="photobooth" element={<PhotoBooth />} />
             <Route path="socialmedia" element={<SocialMedia />} />
             <Route path="socialmedia/:id" element={<MediaDetails />} />
+            <Route path="gallery" element={<Gallery />} />
+            <Route path="gallery/:id" element={<GalleryDetails />} />
+            <Route path="leaderboard" element={<LeaderBoard />} />
+            <Route path="NFT" element={<NFT />} />
+            <Route path="merchandize" element={<Merchandize />} />
+            <Route path="merchandize/:id" element={<MerchandizeDetails />} />
+            <Route path="reward" element={<Rewards />} />
+            <Route path="feedback" element={<FeedbackAndComplaint />} />
             <Route
               path="businesscardandluckydraw"
               element={<BusinessAndLuckyDraw />}
